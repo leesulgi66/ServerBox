@@ -13,7 +13,7 @@ public class TestController {
 
     private final Logger LOGGER = LoggerFactory.getLogger(TestController.class);
 
-    @GetMapping(value = "/api/server")
+    @GetMapping(value = "/around-hub")
     public String getTest1() {
         LOGGER.info("getTest1 호출!");
 
