@@ -47,6 +47,8 @@ public class TestController {
         memberDTO1.setEmail(email);
         memberDTO1.setOrganization(organization);
 
+        // 리턴값을 파라미터로 담은 값 or memberDTO 에서 받은값을 쓰는 방법이 다르다.
+
         return ResponseEntity.status(HttpStatus.OK).body(memberDTO1);
     }
 
