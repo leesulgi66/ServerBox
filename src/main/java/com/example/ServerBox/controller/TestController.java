@@ -42,7 +42,12 @@ public class TestController {
 
         LOGGER.info("getMember 호출!");
 
-        return ResponseEntity.status(HttpStatus.OK).body(memberDTO);
+        MemberDTO memberDTO1 = new MemberDTO();
+        memberDTO1.setName(name);
+        memberDTO1.setEmail(email);
+        memberDTO1.setOrganization(organization);
+
+        return ResponseEntity.status(HttpStatus.OK).body(memberDTO1);
     }
 
     @PostMapping(value = "/add-header")
